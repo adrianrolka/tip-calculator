@@ -6,7 +6,6 @@ while int(percentage) not in [10, 12, 15]:
   print("Incorrect precentage")
   break
 else:
-  tip = (int(percentage)/int(total)*100)/int(people)
-  totaldevided = int(total)/int(people)
-  print("Each person should pay: $" + str(tip + totaldevided))
-  
+  tip = ((int(percentage)*int(total))/100)/int(people)
+  total_divided = (int(total)/int(people))
+  print("Each person should pay: $" + str(tip + total_divided)[0:3])
